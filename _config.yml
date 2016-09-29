@@ -15,4 +15,4 @@ twitter_username:
 github_username:  cltomli
 
 # Build settings
-markdown: kramdown
+markdown: 
