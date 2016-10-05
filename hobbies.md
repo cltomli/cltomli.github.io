@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Hobbies
-permalink: /hobbies/
+title: Resume
+permalink: /resume/
 ---
 
-<p>My name is Carson Tomlinson</p>
-
-
+<center>
+<iframe src="/assets/Carson Tomlinson Resume 7-1-16.pdf" width="600" height="800"></iframe>
+</center>
