@@ -4,6 +4,8 @@ title : About
 permalink: /about/
 ---
 
+My name is Carson Tomlinson
+
 <h2>Gravity</h2>
 <p>Minimal, text based, liberal Jekyll theme<br>for sharing your awesome ideas.</p>
 <br>

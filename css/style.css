@@ -12,7 +12,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 400 16px/1.5 "PT Sans", Helvetica, Arial, sans-serif;
-  color: #111;
+  color: #0080ff;
   background-color: #d9d9d9;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -74,11 +74,7 @@ a {
     color: black !important;
     border-bottom: 1px dotted black; }
   a.page-link:hover {
-<<<<<<< HEAD
     color: #111;
-=======
-    color: #4169E1;
->>>>>>> ba613f632b7d91365ecafd161742670fe12c9d2d
     border-bottom: 1px dotted black; }
   a.postLink {
     color: black !important; }
@@ -265,14 +261,14 @@ pre {
   padding-right: 2em; }
 
 .site-navigation {
-  color: #aaa;
+  color: #99ccff;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 2px;
   text-indent: 6px;
   font-family: 'Josefin Sans';
   font-weight: 300;
-  padding-top: 5em; 
+  padding-top: 5em;
   text-align: center; }
 
 .page-title {
@@ -293,11 +289,7 @@ pre {
   color: #aaaaaa; }
 
 .site-nav .page-link {
-<<<<<<< HEAD
-  color: #111;
-=======
-  color: #4169E1;
->>>>>>> ba613f632b7d91365ecafd161742670fe12c9d2d
+  color: #99ccff;
   line-height: 1.5; }
   .site-nav .page-link:not(:last-child) {
     margin-right: 20px; }
@@ -306,12 +298,8 @@ pre {
     position: absolute;
     top: 9px;
     right: 15px;
-<<<<<<< HEAD
-    background-color: #fdfdfd;
-=======
-    background-color: #F5F5F5;
->>>>>>> ba613f632b7d91365ecafd161742670fe12c9d2d
-    border: 1px solid #e8e8e8;
+    background-color: #99ccff;
+    border: 1px solid #99ccff;
     border-radius: 5px;
     text-align: right; }
     .site-nav .menu-icon {
