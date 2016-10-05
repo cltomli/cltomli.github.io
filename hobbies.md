@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: Design
-permalink: /design/
+title: Hobbies
+permalink: /hobbies/
 category: "Hobbies"
 tagline: "it's all about perception."
 ---
