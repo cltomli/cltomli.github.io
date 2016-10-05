@@ -74,7 +74,11 @@ a {
     color: black !important;
     border-bottom: 1px dotted black; }
   a.page-link:hover {
+<<<<<<< HEAD
     color: #111;
+=======
+    color: #4169E1;
+>>>>>>> ba613f632b7d91365ecafd161742670fe12c9d2d
     border-bottom: 1px dotted black; }
   a.postLink {
     color: black !important; }
@@ -288,7 +292,11 @@ pre {
   color: #aaaaaa; }
 
 .site-nav .page-link {
+<<<<<<< HEAD
   color: #111;
+=======
+  color: #4169E1;
+>>>>>>> ba613f632b7d91365ecafd161742670fe12c9d2d
   line-height: 1.5; }
   .site-nav .page-link:not(:last-child) {
     margin-right: 20px; }
@@ -297,7 +305,11 @@ pre {
     position: absolute;
     top: 9px;
     right: 15px;
+<<<<<<< HEAD
     background-color: #fdfdfd;
+=======
+    background-color: #F5F5F5;
+>>>>>>> ba613f632b7d91365ecafd161742670fe12c9d2d
     border: 1px solid #e8e8e8;
     border-radius: 5px;
     text-align: right; }
