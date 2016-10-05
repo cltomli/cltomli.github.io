@@ -15,6 +15,6 @@ twitter_username:
 github_username:  cltomli
 
 # Build settings
-markdown: 
+markdown: kramdown
 
 # jekyll serve --host $IP --port $PORT
