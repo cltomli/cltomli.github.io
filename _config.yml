@@ -16,3 +16,5 @@ github_username:  cltomli
 
 # Build settings
 markdown: 
+
+# jekyll serve --host $IP --port $PORT
