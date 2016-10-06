@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  INLS 201 Forum Post 3
+title:  INLS 201 Module 3
 date:   2016-10-05
 categories: jekyll update
 ---
