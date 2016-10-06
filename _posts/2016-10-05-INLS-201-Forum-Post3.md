@@ -5,7 +5,7 @@ date:   2016-10-05
 categories: jekyll update
 ---
 
-<p> I am using this to sumbit an assigmnt for INLS 201 </p>
+<p> <i> (I am using this to sumbit a assigmnt for INLS 201) </i> </p>
 
 <p> Before this semester I had absolutely no experience with coding. I knew it was something that I wanted to try but had never made any real effort to start. However, this semester I have found myself in three classes that require me to code, COMP 110, INLS 201, and now INLS 161. They are all beginner level classes so I am leaning many of the same skills and lesions in multiple classes even though each class is working with different types of coding languages. In COMP 110 most everything I am leaning is in Java, but for INLS 201 I am leaning to code in html. However, despite having had some experience using HTML it has still been very educational to actually learn about HTML instead of simply using a basic understanding of it to write commands. </p>
 
