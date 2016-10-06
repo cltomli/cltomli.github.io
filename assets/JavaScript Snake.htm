@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://patorjk.com/games/snake/ -->
+<html manifest="snake.appcache"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<!--
+
+JavaScript Snake
+By Patrick Gillespie
+http://patorjk.com/games/snake
+
+Soure code is available here: https://github.com/patorjk/JavaScript-Snake
+
+--> 
+    <title>JavaScript Snake</title>
+    <link rel="stylesheet" type="text/css" href="./JavaScript Snake_files/snake.css">
+    
+<script src="./JavaScript Snake_files/quant.js" async="" type="text/javascript"></script><script type="text/javascript" async="" src="./JavaScript Snake_files/ga.js"></script><script type="text/javascript">
+if (navigator.onLine && window.location.hostname === 'patorjk.com') {
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3312460-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+}
+</script>
+</head>
+<body style="background-color: rgb(252, 84, 84);">
+    <div id="game-area" tabindex="0" class="snake-game-container" style="left: 0px; top: 0px; width: 1275px; height: 627px;">
+    <div class="snake-pause-screen" style="z-index: 10000;"><div style="padding:10px;">[Paused]<p>Press [space] to unpause.</p></div></div><div id="playingField" class="snake-playing-field" style="left: 20px; top: 20px; width: 1220px; height: 560px;"></div><div class="snake-panel-component" style="top: 589px; width: 450px; left: 413px; display: block;"><a href="http://patorjk.com/blog/software/" class="snake-link">more patorjk.com apps</a> - <a href="https://github.com/patorjk/JavaScript-Snake" class="snake-link">source code</a></div><div class="snake-panel-component" style="top: 589px; left: 1155px;">Length: 1</div><div id="sbWelcome0" class="snake-welcome-dialog" style="z-index: 1000; display: none;"><div>JavaScript Snake<p></p>Use the <strong>arrow keys</strong> on your keyboard to play the game. On Windows, press F11 to play in Full Screen mode.<p></p></div><button>Play Game</button></div><div class="snake-snakebody-block      snake-snakebody-alive  snake-snakebody-alive" style="left: -1000px; top: -1000px; width: 20px; height: 20px; z-index: 2;"></div><div class="snake-snakebody-block      snake-snakebody-alive  snake-snakebody-alive" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div class="snake-snakebody-block      snake-snakebody-alive  snake-snakebody-alive" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div class="snake-snakebody-block        snake-snakebody-alive snake-snakebody-alive  snake-snakebody-alive" style="left: -1000px; top: -1000px; width: 20px; height: 20px; z-index: 3;"></div><div class="snake-snakebody-block      snake-snakebody-alive  snake-snakebody-alive" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div class="snake-snakebody-block      snake-snakebody-alive  snake-snakebody-alive" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div class="snake-snakebody-block        snake-snakebody-alive snake-snakebody-alive  snake-snakebody-alive" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div class="snake-snakebody-block        snake-snakebody-alive snake-snakebody-alive  snake-snakebody-alive" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div class="snake-snakebody-block        snake-snakebody-alive snake-snakebody-alive  snake-snakebody-alive" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div class="snake-snakebody-block        snake-snakebody-alive snake-snakebody-alive  snake-snakebody-alive" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div class="snake-snakebody-block        snake-snakebody-alive snake-snakebody-alive  snake-snakebody-alive" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div id="snake-food-0" class="snake-food-block" style="width: 20px; height: 20px; left: 200px; top: 220px;"></div><div class="snake-snakebody-block        snake-snakebody-alive snake-snakebody-alive  snake-snakebody-alive" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div class="snake-snakebody-block        snake-snakebody-alive snake-snakebody-alive  snake-snakebody-alive" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div class="snake-snakebody-block        snake-snakebody-alive snake-snakebody-alive  snake-snakebody-alive" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div class="snake-snakebody-block        snake-snakebody-alive snake-snakebody-alive  snake-snakebody-alive" style="left: 40px; top: 40px; width: 20px; height: 20px; z-index: 3;"></div><div class="snake-snakebody-block        snake-snakebody-alive snake-snakebody-alive  snake-snakebody-alive" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div class="snake-snakebody-block" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div class="snake-snakebody-block" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div class="snake-snakebody-block" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div class="snake-snakebody-block" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div class="snake-snakebody-block" style="left: -1000px; top: -1000px; width: 20px; height: 20px;"></div><div id="sbTryAgain0" class="snake-try-again-dialog" style="z-index: 4; display: none;"><div>JavaScript Snake<p></p>You died :(.<p></p></div><button>Play Again?</button></div></div>
+    
+    <div class="snake-try-again-dialog">
+
+    </div>
+    <script type="text/javascript" src="./JavaScript Snake_files/snake.js"></script>
+    <script type="text/javascript">
+    var mySnakeBoard = new SNAKE.Board(  {
+                                            boardContainer: "game-area",
+                                            fullScreen: true
+                                        });    
+    </script>
+
+<!--/* Ad4Game Interstitial or Floating DHTML Tag */-->
+
+<script type="text/javascript"><!--//<![CDATA[
+   var ox_u = '//ads.ad4game.com/www/delivery/al.php?zoneid=51038&amp;layerstyle=footer&amp;position=bottom&amp;speed=3&amp;slide=0&amp;delay=-&amp;transparent=0';
+   if (document.context) ox_u += '&context=' + escape(document.context);
+   document.write("<scr"+"ipt type='text/javascript' src='" + ox_u + "'></scr"+"ipt>");
+//]]>--></script><script type="text/javascript" src="./JavaScript Snake_files/al.php"></script><style type="text/css">
+<!--
+#footer89a7f334{
+/* Netscape 4, IE 4.x-5.0/Win and other lesser browsers will use this */
+position: fixed; right: 0px; bottom: 0px;
+/* IE5.5+/Win - this is more specific than the IE 5.0 version */
+right: auto; bottom: auto;
+left: 0px;
+bottom: 0px;
+right: 0px;
+padding: 0px;
+}
+-->
+</style>
+<!--[if lte IE 9]>
+<style type="text/css">
+#footer89a7f334{
+/* Netscape 4, IE 4.x-5.0/Win and other lesser browsers will use this */
+position: absolute; right: 0px; bottom: 0px;
+/* IE5.5+/Win - this is more specific than the IE 5.0 version */
+right: auto; bottom: auto;
+left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+top: expression( ( -footer89a7f334.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+width: expression( ( 0 + ( ignoreMe3 = document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) ) + 'px' );
+}
+</style>
+<script type="text/javascript">
+if (document.documentMode >= 8) {
+document.write("<style type=\"text/css\">#footer89a7f334{ position:fixed;left:0px;right:0px;bottom:0px;}</style>");
+}
+</script>
+<![endif]-->
+<style type="text/css">
+<!--
+div#MaxFooter { background-color:#FFFFFF;}
+-->
+</style>
+<div id="footer89a7f334" style="height: 90px; display: inline; z-index: 2147483647; padding: 0px;">
+<div style="overflow-y:hidden;position:relative;z-index: 2147483647;padding:0px;">
+<div style="position: absolute;z-index: 2147483647;width:100%;padding: 0px;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="z-index: 2147483647;border-width: 0pt; background: transparent none repeat scroll 0% 0%; border-collapse: separate;padding: 0px; table-layout: auto;"><tbody><tr><td align="center" style="border-width:0px;">
+<div align="center" style="padding:0px;">
+<a href="http://ads.ad4game.com/www/delivery/ck.php?oaparams=1&amp;bannerid=465768&amp;zoneid=51038&amp;OXLCA=1&amp;ver=3.3&amp;cb=bc505a5a25&amp;tag=layer&amp;a4gsid=m1KYfHG469UcqyQzwD5rlZivoCpNd9&amp;hitid=m1KYfHG469UcqyQzwD5rlZivoCpNd9&amp;caid=22615&amp;pubid=9128&amp;oadest=http%3A%2F%2Frbxtrk.com%2F%3Fa%3D7%26c%3D14%26s1%3D51038%26s2%3Dm1KYfHG469UcqyQzwD5rlZivoCpNd9" target="_blank"><img src="./JavaScript Snake_files/f60de7f1aa667f12e85d1c9e9d36ad5e.jpg" width="728" height="90" alt="" title="" border="0"></a><script type="text/javascript"><!--//<![CDATA[
+MAX_footer_init('000000', 56, 'FFFFFF');
+//]]>--></script>
+<!-- type=jpeg#type -->
+<!-- file=http://cdn.ad4game.com/f60de7f1aa667f12e85d1c9e9d36ad5e.jpg#file -->
+<!-- url=http://ads.ad4game.com/www/delivery/ck.php?oaparams=1&bannerid=465768&zoneid=51038&OXLCA=1&ver=3.3&cb=bc505a5a25&tag=layer&a4gsid=m1KYfHG469UcqyQzwD5rlZivoCpNd9&hitid=m1KYfHG469UcqyQzwD5rlZivoCpNd9&caid=22615&pubid=9128&oadest=http%3A%2F%2Frbxtrk.com%2F%3Fa%3D7%26c%3D14%26s1%3D51038%26s2%3Dm1KYfHG469UcqyQzwD5rlZivoCpNd9#url -->
+<!-- &a=http://ads.ad4game.com/www/delivery/ck.php?oaparams=1&bannerid=465768&zoneid=51038&OXLCA=1&ver=3.3&cb=bc505a5a25&tag=layer&a4gsid=m1KYfHG469UcqyQzwD5rlZivoCpNd9&hitid=m1KYfHG469UcqyQzwD5rlZivoCpNd9&caid=22615&pubid=9128&oadest=http%3A%2F%2Frbxtrk.com%2F%3Fa%3D7%26c%3D14%26s1%3D51038%26s2%3Dm1KYfHG469UcqyQzwD5rlZivoCpNd9"  target=http://cdn.ad4game.com/f60de7f1aa667f12e85d1c9e9d36ad5e.jpg -->
+<script type="text/javascript">document.context='Yjo0NjU3NjgjYzoyMjYxNXw='; </script><script type="text/javascript" async="async" src="./JavaScript Snake_files/fltiu.js" language="JavaScript" name="f3e7g0zi0wu1a"></script>
+</div></td></tr></tbody></table></div>
+<div id="MAXt_89a7f334" style="height: 34px; z-index: 2147483647; padding: 0px;"></div>
+<div id="MaxFooter" class="ad-four-game-maxfooter-footerads" style="height: 56px; z-index: 2147483647; position: static; padding: 0px; background-color: rgb(0, 0, 0);">
+<span style="font-family: arial,sans-serif; font-size: 14px; color: #555; font-weight: bold; display: block; position: absolute; width: 20px; height: 20px; line-height: 20px; border: 2px solid #ddd; border-radius: 20px; background: #fff; box-shadow: 2px 2px rgba(0,0,0,.3); right: 10px; bottom: 60px; cursor: pointer; text-align: center;z-index: 9999999999;" onclick="javascript:MAX_footer_close_89a7f334(0);">X</span>
+</div>
+<div id="MAXc_89a7f334" class="ad-four-game-maxfooter-footerads-links" style="position: absolute; right: 5pt; bottom: 4px; display: inline; z-index: 2147483647; padding: 0px;">
+<table style="border-width: 0pt; background: transparent none repeat scroll 0% 0%; border-collapse: separate; table-layout: auto;">
+<tbody><tr><td style="border-width:0px;"><a id="MAXh_89a7f334" href="http://www.ad4game.com/" target="_blank" style="color: rgb(255, 255, 255); font-size: 11px; font-family: verdana; text-decoration: underline;">Advertise Here</a>
+</td></tr></tbody></table></div>
+</div>
+</div>
+<iframe src="./JavaScript Snake_files/lg.html" width="1" height="1" framespacing="0" frameborder="no" scrolling="no" style="display:none;"> </iframe>
+
+
+
+
+<script type="text/javascript" async="" src="./JavaScript Snake_files/kfl.js"></script><script type="text/javascript" charset="ISO-8859-1" async="" src="./JavaScript Snake_files/iftfl.js" name="i3e7g0zi0wu1a"></script></body></html>
