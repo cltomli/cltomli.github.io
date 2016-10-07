@@ -16,14 +16,19 @@ categories: jekyll update
 <p> Like any other form of coding that I have encountered HTML is can be viewed as a type of language. A language that is very particular and strict about the way it is “spoken” in order for it to be understood. I say this because there are very basic but strict guide lines that must be followed when using HTML in order for it to be processed correctly. For example whenever a tag is “opened,” such as < p > when started a paragraph, it must be closed once the paragraph is complete with the tag < /p >.To being with HTML standing for Hyper Text Mark Up Language which is used to create web pages. In order to make a webpage there is a basic HTML format you must follow when creating it. The first thing is to declare what type of document the webpage will be written in, this is done by typing < !DOCTYPE > at the beginning of the page. Then to indicate that the webpage will be written in HTML < html > must be stated below it. That takes care of the procedural and behind the scene elements that must be created and now the actual content can be created. From there the title and the body can then be created. Tags aren’t just used for declaration but also for augmentation of text. To make a certain line of text italicized you simply use the tag < i > followed by the type you wish to italicize and then close the tag. Many of the text editing tools that are commonly used when creating a word document are just as easily done when using HTML. If you wanted to center a block of text all you would need to do is create a style when opening a tag. For example < p style=”text-align:center;” >. After using HTML it is easy to realize that most everything you can do uses the same formatting. This can be seen when creating a text that is hyperlinked. All you do is open a tag with < a  href= ”url” >, then the text you desire to be hyperlinked followed by the closing tag </a>. Just like any other language you can start to recognize patterns and the more you practice the more intuitive it becomes.
 
 <p> CSS or Cascading Style Sheets is a language that describes the style of a HTML document. CSS simply makes the customization of web pages take much less time and lets you modify everything in one command. CSS allows you to assign multiple properties and values to the same part of a website. For example, it could look like
-
+ 
+ 
 body {
+
 
 font-family: ‘Josefin Sans’;
 
+
 color: black;
 
+
 front-size: 200%; }
+
 
 <p> I have worked with all of this information before, but I never had the opportunity to really learn about the back group of HTML and CCS. After having the opportunity to do so in this class I feel more comfortable and confident when using them. However, when it comes to databases I had no previous knowledge.
 
